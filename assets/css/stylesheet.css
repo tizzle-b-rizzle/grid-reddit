@@ -1,0 +1,171 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.grid-container {
+  display: grid;
+  grid-auto-columns: 1vw;
+  grid-auto-rows: 1vh;
+}
+
+#logo img {
+  width: 40px;
+  height: 40px;
+  background-size: cover;
+}
+
+#logo {
+  grid-column: 14 / span 1;
+  grid-row: 17 / span 1;
+}
+
+#sign-in {
+  grid-column: 14 / span 20;
+  grid-row: 27 / span 1;
+}
+
+#sign-in h1 {
+  font-size: 18px;
+  font-weight: 549;
+}
+
+fieldset {
+  border-width: initial;
+  border-style: none;
+  border-color: initial;
+  border-image: initial;
+  margin: 0px;
+  padding: 0px;
+}
+
+.user-input-username {
+  grid-column: 14 / span 4;
+  grid-row: 35 / span 1;
+}
+
+.user-input-password {
+  grid-column: 14 / span 4;
+  grid-row: 47 / span 1;
+}
+
+.animatedtextinputusername,
+.animatedtextinputpassword {
+  width: 390px;
+  height: 45px;
+  border-width: 1px;
+  border-radius: 4px;
+  border-style: solid;
+  border-color: rgba(0, 0, 0, 0.1);
+  background-color: rgb(252, 252, 251);
+  padding: 22px 12px 10px;
+}
+
+.animatedtextinputlabelusername {
+  position: absolute;
+  top: 37vh;
+  left: 14vw;
+  color: grey;
+}
+
+.animatedtextinputlabelpassword {
+  position: absolute;
+  top: 49vh;
+  left: 14vw;
+  color: grey;
+}
+
+#background-image {
+  width: 110%;
+  height: 100%;
+  background-size: cover;
+  grid-column: 1 / span 10;
+  grid-row: 1 / span 100;
+  background-image: url(https://www.redditstatic.com/accountmanager/bbb584033aa89e39bad69436c504c9bd.png);
+}
+
+#sign-in-button {
+  grid-column: 14 / span 1;
+  grid-row: 60;
+  height: 35px;
+  width: 155px;
+  border: 10px;
+  border-radius: 4px;
+  background: rgb(0, 121, 211);
+  letter-spacing: 1.5px;
+}
+
+#sign-in-button a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+.forgot {
+  display: flex;
+  grid-column: 14 / span 40;
+  grid-row: 68;
+}
+
+.forgot > a,
+#dot {
+  text-decoration: none;
+  color: rgb(0, 121, 211);
+  font-size: 11px;
+}
+
+#new-to-reddit {
+  grid-column: 14 / span 40;
+  grid-row: 75;
+  font-size: 11.5px;
+}
+
+#new-sign-up {
+  text-decoration: none;
+  font-weight: 550;
+}
+
+body {
+  background-color: white;
+  font-family: IBMPlexSans, sans-serif;
+  letter-spacing: 1px;
+}
+
+label {
+  font-family: "Noto Sans", sans-serif;
+  font-size: 9px;
+  font-weight: 700;
+}
+
+.user-input-username:hover > .animatedtextinputlabelusername {
+  font-size: 7px;
+  transition: 0.2s;
+  transition-timing-function: ease-in-out;
+  top: 36vh;
+}
+
+.user-input-password:hover > .animatedtextinputlabelpassword:after {
+  font-size: 0;
+}
+
+.user-input-password:hover > .animatedtextinputlabelpassword {
+  font-size: 7px;
+  transition: 0.2s;
+  transition-timing-function: ease-in-out;
+  top: 48vh;
+}
+
+.user-input-username:hover > .animatedtextinputlabelusername:after {
+  font-size: 0;
+}
+
+.animatedtextinputlabelusername:after,
+.animatedtextinputlabelpassword:after {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 15px;
+  display: inline-block;
+  vertical-align: top;
+  margin-left: 7px;
+  content: "\2022";
+  color: #24a0ed;
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="assets/css/stylesheet.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>reddit.com: Log in</title>
+  </head>
+  <body>
+    <div class="grid-container">
+      <div id="background-image"></div>
+      <div id="logo">
+        <img src="assets/img/logo.png" />
+      </div>
+      <div id="sign-in"><h1>Sign in</h1></div>
+      <fieldset class="user-input-username" position="relative">
+        <input
+          type="text"
+          name="username"
+          data-empty="true"
+          class="animatedtextinputusername"
+        />
+        <label
+          class="animatedtextinputlabelusername"
+          id="animatedtextinputlabelusername"
+          for="username"
+          >USERNAME</label
+        >
+      </fieldset>
+      <fieldset class="user-input-password" position="relative">
+        <input
+          type="text"
+          name="password"
+          data-empty="true"
+          class="animatedtextinputpassword"
+        />
+        <label
+          class="animatedtextinputlabelpassword"
+          id="animatedtextinputlabelpassword"
+          for="password"
+          >PASSWORD
+        </label>
+      </fieldset>
+      <button id="sign-in-button">
+        <b><a href="..">SIGN IN</a></b>
+      </button>
+      <div class="forgot">
+        <a href="..">Forgot username</a>
+        <span id="dot">.</span>
+        <a href="..">Forgot password</a>
+      </div>
+      <div id="new-to-reddit">
+        <p>New to Reddit? <a href=".." id="new-sign-up">SIGN UP</a></p>
+      </div>
+    </div>
+  </body>
+</html>
